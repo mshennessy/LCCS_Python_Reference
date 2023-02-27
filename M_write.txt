@@ -1,0 +1,3 @@
+First line of my text file!
+Second line of my text file!
+Third line of my text file!

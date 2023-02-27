@@ -1,0 +1,5 @@
+Author: G Hennessy
+This is a test file for the python reference guide
+This is part of section O - File Handling
+This file will be opened for reading only
+Enjoy!!
