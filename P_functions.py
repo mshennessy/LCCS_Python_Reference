@@ -52,4 +52,17 @@ print("\nRisk simulation")
 print("Attack:",attack)
 print("Defence:",defence)
 
-        
+# Functions can also return multiple values
+# This is usually not needed, one return value is probably sufficient
+# As with passing in parameters, you have to be careful with order
+def multiFunc(name,a,b):
+    localList=[]
+    localList.append(name)
+    surname=input("Enter surname")
+    localList.append(surname)
+    c=a+b
+    return localList, c, True
+
+# Main code
+nameList, x, check = multiFunc("Tom",1,2)
+print(nameList,x,check)
