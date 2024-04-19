@@ -88,5 +88,4 @@ a =68
 b = "Tom"
 print(b, "is", a,"kg in weight")
 # or using the f string
-val = 'Geeks'
-print(f"{b} is {a} kg in weight")
+print(f"{b} is {a}kg in weight")
