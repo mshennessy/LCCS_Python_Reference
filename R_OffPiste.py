@@ -6,6 +6,7 @@
 # reference guide, but are worth knowing
 
 # 1. First is the string.join() method.
+print("*"*10,"1 The string.join() method","*"*10)
 myString="*"
 newString = myString.join(['a','b','c'])
 print("myString after join",newString)  # Output is "a*b*c"
@@ -22,6 +23,7 @@ newString="-".join(myList)
 print(newString)     # This gives us D-O-G
 
 # 2. string.__contains__() method
+print("*"*10,"2. string.__contains__() method","*"*10)
 # Works just like "in" for lists
 myList=["North","South","East","West"]
 if "East" in myList:
@@ -32,6 +34,9 @@ if myString.__contains__("East"):
     print("It is in the string")
 
 # 3. end=" " or end="" attribute
+# BTW, notice in the next line that I have to escape the
+# quote if I want to print " " or similar on the output
+print("*"*10,"3. end=\" \" or end=\"\" attribute","*"*10)
 # Usually used with print()
 print("this", end=" ") # print automatically adds a space and a newline.
 print("and this on the same line")
@@ -41,6 +46,7 @@ print()     # You may have to manually add a newline
 print("\n\n\n") # or three
 
 # 4 Dictionaries
+print("*"*10,"4. Fun with Dictionaries","*"*10)
 # This is a whole different data structure, made up of key:value pairs
 # You find an item in a list through its index.
 # You find an item in a dictionary using its key
@@ -70,6 +76,7 @@ dict3={
 print(dict3["name"],dict3["subjects"][1]) # Print name and second item in subjects list
 
 # 5 Off off-piste we have the zip() function
+print("*"*10,"5 The zip() function","*"*10)
 # If you are a fan of dictionaries, you can create one from 2 lists by literlly (?) zipping them together
 # Two lists with equal numbers of elements (if the lists are not equal length, surplus elements that
 # don't pair off are ignored
@@ -84,6 +91,7 @@ print("Now a dictionary",dictFromZip)
 # 6 Weird print. You don't need to know this
 # You can use the print function as it is shown
 # in the reference guide
+print("*"*10,"6  Weird print or f-strings","*"*10)
 a =68
 b = "Tom"
 print(b, "is", a,"kg in weight")
