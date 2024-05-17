@@ -31,7 +31,11 @@ if "East" in myList:
 
 myString= "NorthSouthEastWest"
 if myString.__contains__("East"):
-    print("It is in the string")
+    print("It is in the string (used __contains__())")
+# Alternatively, we can use the "in" statement which is on the ref guide
+# for lists. It works for strings also.
+if "East" in myString:
+    print("It is in the string (used \"in\")")
 
 # 3. end=" " or end="" attribute
 # BTW, notice in the next line that I have to escape the
@@ -55,9 +59,16 @@ dict1={
     "B": "Might sting you",
     "C": "Go Sailing"
     }
+print(dict1)      # Print the whole dictionary
 print(dict1["C"]) # Prints the value corresponding to the Key given
-print(dict1)
 
+# Also, the "in" statement works for dictionaries too
+# It just returns a True/False, not the value of the dictionary entry
+if "A" in dict1:
+    print("A is in the dictionary")  
+if "D" not in dict1:
+    print("D is not in the dictionary")
+    
 #You can also create a dictionary using the dict() function
 dict2 = dict(D = "Dee", E = 2.71828, F = "Eff")
 print(dict2["E"])

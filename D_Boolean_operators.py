@@ -27,3 +27,15 @@ if(d<=20 or b):
 if(c and not b):
     print("c is true (true) AND NOT b is true (true)")
     
+# Note that True means non zero
+testNum= -1
+testString ="Leaving Cert Computer Science"
+testFalseNum=0.0
+if testString:
+    print ("If <string> counts as True")
+if testNum:
+    print ("Non zero value counts as True, even", testNum)    
+if testFalseNum:
+    print ("This means the value is True", testFalseNum)
+else:
+    print ("This means the value is False, even if it is a float", testFalseNum)    
